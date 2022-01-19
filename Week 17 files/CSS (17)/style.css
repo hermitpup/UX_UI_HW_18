@@ -32,7 +32,33 @@ ul {
     background-color: #F8F2E7;
 }
 
+<!-- My UX Skills section coded using CSS flex -->
+.flexContainer {
+    display:flex;
+    width: 33%;
+    flex-direction: row;
+}
+
+.workGrid {
+    display: grid;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'area1 area2 area3 area4';
+    grid-template-rows: 100px 300px;
+    grid-template-columns: auto auto auto auto;
+}
+
 footer {
     background-color: #F8F2E7;
+}
+
+@media only screen and (max-width: 600) {
+    flex-direction: column;
+    width: 100%;
+    grid-template-areas: 'area1 area2 area3 area4';
+    grid-template-rows: 100px 300px;
+    grid-template-columns: auto auto auto auto;
 }
 
